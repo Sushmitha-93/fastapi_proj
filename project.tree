@@ -1,0 +1,48 @@
+.
+├── app/
+│   ├── .env
+│   ├── main.py
+│   ├── api/
+│   │   ├── router.py
+│   │   ├── __init__.py
+│   │   ├── auth/
+│   │   │   ├── auth.py
+│   │   │   ├── user_deps.py
+│   │   │   └── __init__.py
+│   │   └── handlers/
+│   │       ├── closest_happy_place.py
+│   │       ├── user.py
+│   │       ├── user_mood.py
+│   │       └── __init__.py
+│   ├── core/
+│   │   ├── config.py
+│   │   ├── security.py
+│   │   └── __init__.py
+│   ├── models/
+│   │   ├── userModel.py
+│   │   ├── usermood_model.py
+│   │   └── __init__.py
+│   ├── schemas/
+│   │   ├── auth_schema.py
+│   │   ├── usermood_schema.py
+│   │   ├── userSchema.py
+│   │   └── __init__.py
+│   └── services/
+│       ├── usermood_service.py
+│       ├── userService.py
+│       └── __init__.py
+├── tests/
+│   ├── conftest.py
+│   ├── util.py
+│   └── __init__.py/
+│       └── routes/
+│           ├── test_auth.py
+│           ├── test_closestHappyPlace.py
+│           ├── test_login.py
+│           ├── test_root.py
+│           ├── test_signup.py
+│           ├── test_usermood_add.py
+│           └── __init__.py
+├── Dockerfile
+├── pytest.ini
+└── requirements.txt
