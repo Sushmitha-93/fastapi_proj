@@ -26,6 +26,15 @@ It's built on top of these libraries to provide those features:
 - [scipy](https://docs.scipy.org/doc/scipy/index.html) - Used [Scipy KD Tree](https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.KDTree.html#scipy-spatial-kdtree) for quick nearest-neighbour lookup to efficiently find nearest location among list of locations to a target location.
 - [httpx](https://www.python-httpx.org/) and [pytest-asyncio](https://github.com/pytest-dev/pytest-asyncio) - For Unit Testing
 
+### Why FastAPI?
+- FastAPI is a modern, high-performance framework. It's high performance is due to the fact that it allows us to handle concurrent requrests more efficiently by avoiding blocking operations since the framework is built on python's asynchronous concepts (asyncio) and leverates capabilities of python 3.7+ type hints.
+- FastAPI also provides automatic validation and parsing fore requests and response messages using Pydantic library. Also allws us to define data models, with reich validation, rules and parsing.
+- It has elegant built in support for authentication and authorization mechanisms such as OAuth, JWT, also role based access to secure APIs easily.
+- What's more is it automatically generates a super cool, interactive Postman like API documentation that provides comprehensive overview of all API endpoints exposed, the data model schemas for requests and responses. Also allows users to test APIs easily.
+- There's an extensive ecosystems to allow integrations with other popular libraries and databases. 
+
+Only drawback is that it requires pthon 3.7 and later, which means it may not be compatible for projects using older python versions.
+
 ## Project File Structure
 
 The project follows the following file structure:
