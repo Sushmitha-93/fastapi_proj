@@ -1,8 +1,9 @@
 # Mood Sensing App Backend
 
 ## Intro
+This project provides backend REST API services for mood sensing app to receive user mood and location data and store in database, Send frequency distribution of a given user, and return a closest location where user was last seen happy. 
 
-I have built the backend using Python async micro framework [FastAPI](https://fastapi.tiangolo.com/) and [MongoDB]() store with the following features:
+The backend is built using Python async micro framework [FastAPI](https://fastapi.tiangolo.com/) and [MongoDB]() store with the following features:
 
 - [x] User Sign Up
 - [x] Login
